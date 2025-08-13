@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Open my Telegram</title>
+  <style>
+    body{font-family:Helvetica,Arial,sans-serif;text-align:center;padding:40px;background:#f7f7f7}
+    a.button{display:inline-block;margin-top:20px;padding:12px 20px;border-radius:8px;text-decoration:none;border:1px solid #ccc}
+  </style>
+</head>
+<body>
+  <h2>Open Telegram Channel</h2>
+  <p>If it doesn't open automatically, tap the button below.</p>
+  <a id="btn" class="button" href="https://t.me/bhm365">Open in Telegram</a>
+
+  <script>
+    var username = "bhm365";
+    var appLink = "tg://resolve?domain=" + username;
+    var webLink = "https://t.me/" + username;
+
+    window.location = appLink;
+    setTimeout(function(){ window.location = webLink; }, 700);
+  </script>
+</body>
+</html>
